@@ -17,7 +17,7 @@ function agregarAmigo(){
         nombreAmigo.value = "";
     }
 }
-//Creación de la función actualizarListaAmigos, la cual realiza la actualización de la lista de amigos.
+
 function actualizarListaAmigos(){
     listaAmigos.innerHTML = "";
     for(amigo of amigos){
@@ -30,10 +30,6 @@ function actualizarListaAmigos(){
 function sortearAmigo(){
     listaAmigos.innerHTML = "";
     listaResultado.innerHTML = "";
-    if(amigos.length == 0){
-        alert("Por favor, añada al menos un amigo.");
-    }else{
-        var numeroRandom = Math.floor(Math.random() * amigos.length);
-        listaResultado.innerHTML += `<li>Tu amigo secreto es: ${amigos[numeroRandom]}</li>`;
-    }
+    var numeroRandom = Math.floor(Math.random() * amigos.length);
+    listaResultado.innerHTML += `<li>Tu amigo secreto es: ${amigos[numeroRandom]}</li>`;
 }
