@@ -23,7 +23,6 @@ function actualizarListaAmigos(){
     for(amigo of amigos){
         listaAmigos.innerHTML += `<li>${amigo}</li>`;
     }
-    console.log(amigos);
 }
 
 //Creación de la función sortearAmigo, la cual es solicitada en el evento onclick del botón "sortear amigo".
